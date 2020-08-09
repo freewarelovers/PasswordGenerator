@@ -8,19 +8,9 @@
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://passwordgenerator.top/ru/</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-   </url>
-   <url>
       <loc>https://passwordgenerator.top/terms</loc>
       <changefreq>weekly</changefreq>
       <priority>0.6</priority>
-   </url>
-   <url>
-      <loc>https://passwordgenerator.top/ru/terms</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
    </url>
    <url>
       <loc>https://passwordgenerator.top/privacy</loc>
@@ -28,14 +18,24 @@
       <priority>0.6</priority>
    </url>
    <url>
-      <loc>https://passwordgenerator.top/ru/privacy</loc>
+      <loc>https://passwordgenerator.top/contact</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.2</priority>
+   </url>
+   <url>
+      <loc>https://passwordgenerator.top/ru/</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>https://passwordgenerator.top/ru/terms</loc>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://passwordgenerator.top/contact</loc>
+      <loc>https://passwordgenerator.top/ru/privacy</loc>
       <changefreq>weekly</changefreq>
-      <priority>0.2</priority>
+      <priority>0.5</priority>
    </url>
    <url>
       <loc>https://passwordgenerator.top/ru/contact</loc>
