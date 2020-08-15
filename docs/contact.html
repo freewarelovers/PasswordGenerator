@@ -73,13 +73,31 @@ input[type=submit]:hover {
 <p style="text-align:center;">We'll be happy to hear from you. Just drop us a letter at <img src="/img/contact.png" alt="contact us" style="vertical-align:text-bottom;"> or submit the contact form below.</p>
 
 <script>
+function validateForm() {
+  var n = document.forms["contactForm"]["name"].value;
+  if (n == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  var e = document.forms["contactForm"]["email"].value;
+  if (e == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  var m = document.forms["contactForm"]["message"].value;
+  if (m == "") {
+    alert("Message must be filled out");
+    return false;
+  }
+}
+
 var x = document.referrer;
 var url = window.location.href;
 if (x == url) document.write('<div class="success"><p><strong>Thank you!</strong> Your message has been successfully sent.</p></div>');
 </script>
 
 <div class="container">
-<form action="https://api.staticforms.xyz/submit" method="POST">
+<form name="contactForm" action="https://api.staticforms.xyz/submit" onsubmit="return validateForm()" method="POST">
 <label for="name">Name</label>
 <input type="text" id="name" name="name" placeholder="Your name">
 <label for="email">Email</label>
