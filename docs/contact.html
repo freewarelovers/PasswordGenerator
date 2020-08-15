@@ -57,6 +57,11 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+.success {
+  background-color: #ddffdd;
+  border-left: 6px solid #4CAF50;
+}
 </style>
 </head>
 
@@ -68,7 +73,7 @@ input[type=submit]:hover {
 <script>
 var x = document.referrer;
 var url = window.location.href;
-if (x == url) document.write('Thank you!');
+if (x == url) document.write('<div class="success"><p><strong>Thank you!</strong> Your message has been successfully sent.</p></div>');
 </script>
 </p>
 
