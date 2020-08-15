@@ -76,24 +76,24 @@ input[type=submit]:hover {
 function validateForm() {
   var n = document.forms["contactForm"]["name"].value;
   if (n == "") {
-    alert("Name must be filled out");
+    alert("Имя должно быть заполнено");
     return false;
   }
   var e = document.forms["contactForm"]["email"].value;
   if (e == "") {
-    alert("Email must be filled out");
+    alert("Электронная почта должна быть заполнена");
     return false;
   }
   var m = document.forms["contactForm"]["message"].value;
   if (m == "") {
-    alert("Message must be filled out");
+    alert("Сообщение должно быть заполнено");
     return false;
   }
 }
 
 var x = document.referrer;
 var url = window.location.href;
-if (x == url) document.write('<div class="success"><p><strong>Thank you!</strong> Your message has been successfully sent.</p></div>');
+if (x == url) document.write('<div class="success"><p><strong>Спасибо!</strong> Ваше сообщение было успешно отправлено.</p></div>');
 </script>
 
 <div class="container">
