@@ -24,7 +24,7 @@ gtag('config', 'UA-20572145-3');
      });
 </script>
 <style>
-/* Style inputs with type="text", select elements and textareas */
+/* Style inputs with type="text", type="email" and textareas */
 input[type=text], input[type=email], textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
@@ -67,10 +67,11 @@ input[type=submit]:hover {
 
 <div class="container">
 <form action="https://www.formingo.co/submit/38638f99-a886-4275-9967-9122966fea29" method="POST">
-<label for="name">Name</label>
-<input type="text" id="name" name="name" placeholder="Your name">
-<label for="email">Email</label>
-<input type="email" id="email" name="email" placeholder="Your email address">
+<label for="full_name">Name</label>
+<input type="text" id="full_name" name="full_name" placeholder="Your name">
+<label for="__replyto">Email</label>
+<input type="email" id="__replyto" name="__replyto" placeholder="Your email address">
+<input type="hidden" id="__redirect" name="__redirect" value="https://passwordgenerator.top/contact">
 <label for="subject">Subject</label>
 <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 <input type="submit" value="Submit">
