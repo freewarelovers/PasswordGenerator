@@ -16,7 +16,8 @@
 <meta property="fb:app_id" content="990422728066809">
 <link rel="canonical" href="https://passwordgenerator.top/">
 <link rel="alternate" hreflang="ru" href="https://passwordgenerator.top/ru/">
-<link rel="stylesheet" type="text/css" href="/style.css">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style-bsa.css">
 <link rel="icon" href="/favicon.ico">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20572145-3"></script>
 <script>
@@ -33,6 +34,7 @@ gtag('config', 'UA-20572145-3');
      });
 </script>
 <script data-ad-client="ca-pub-0113441673686829" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="//m.servedby-buysellads.com/monetization.js"></script>
 </head>
 
 <body>
@@ -72,6 +74,8 @@ gtag('config', 'UA-20572145-3');
 Password: <span id="password"></span>
 </p>
 <p id="statistics" class="lowlight" style="display:none;">&#xA0;</p>
+
+<div class="native-js"></div>
 
 <p>The <b>Top Password Generator</b> helps you to create strong random passwords that are highly secure and very difficult to crack or guess due to the combination of lower and upper case letters, numbers and punctuation symbols.</p>
 
@@ -308,6 +312,25 @@ return x[0] % n;
 initCharsets();
 initCrypto();
 copyElem.disabled = true;
+</script>
+
+<script>
+  (function(){
+    if(typeof _bsa !== 'undefined' && _bsa) {
+      _bsa.init('custom', 'CE7IT5QM', 'placement:websniffercc', { target: '.native-js', template: `
+	<a href="##link##" class="native-banner" style="background: linear-gradient(-30deg, ##backgroundColor##E5, ##backgroundColor##E5 45%, ##backgroundColor## 45%) #fff;">
+	  <div class="native-main">
+	    <img class="native-img" img src="##logo##">
+	    <div class="native-details" style="color: ##textColor##">
+	      <span class="native-company">Sponsored by ##company##</span>
+	      <span class="native-desc">##description##</span>
+	    </div>
+	    <span class="native-cta" style="color: ##ctaTextColor##; background-color: ##ctaBackgroundColor##;">##callToAction##</span>
+	  </div>
+	</a>`, }
+	    );
+    }
+  })();
 </script>
 
 </body>
